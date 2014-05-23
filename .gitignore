@@ -1,1 +1,5 @@
-*/*.meta
+*.meta
+C#/*.meta
+Audio/*.meta
+Images/*.meta
+Models/*.meta
