@@ -82,35 +82,37 @@ public enum mDOMAIN
 
 public class mCLASS
 {
-	public enum WARRIOR
-	{					// TEMPLATE
-		WARRIOR,		// First job
-		CRUSADER,		// Second job
-		HANDOFGOD,		// Third job:good
-		TEMPLAR			// Third job:evil
-	};
-	public enum WIZARD
-	{
-		WIZARD,
-		SCHOLAR,
-		ARCHMAGE,
-		LICH
-	};
-	public enum THIEF
-	{
-		THIEF,
-		BANDIT,
-		ROGUE,
-		OUTLAW
-	};
-	public enum HEALER
-	{
-		HEALER,
-		CLERIC,
-		PRIEST,
-		BLOODMASTER
-	};
+	public object Class;
 }
+
+public enum WARRIOR 
+{                      // TEMPLATE
+	WARRIOR,        // First job
+	CRUSADER,       // Second job
+	HANDOFGOD,      // Third job:good
+	TEMPLAR         // Third job:evil
+};
+public enum WIZARD
+{
+	WIZARD,
+	SCHOLAR,
+	ARCHMAGE,
+	LICH
+};
+public enum THIEF
+{
+	THIEF,
+	BANDIT,
+	ROGUE,
+	OUTLAW
+};
+public enum HEALER
+{
+	HEALER,
+	CLERIC,
+	PRIEST,
+	BLOODMASTER
+};
 
 public class Enemy
 {
