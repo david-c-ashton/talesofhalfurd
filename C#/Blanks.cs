@@ -3,7 +3,7 @@ using System.Collections;
 
 public static class Blanks
 {
-	public static Equipment defaultWarriorEQ(int pClass)
+	public static Equipment defaultHumanEQ(int pClass, mSEX gender)
 	{
 		Equipment equipment = new Equipment();
 

@@ -15,6 +15,13 @@ public struct mUnit
 	public mCLASS eClass;
 }
 
+public enum mSEX
+{
+	MALE,
+	FEMALE,
+	MECH
+}
+
 public enum aTYPE
 {
 	SINGLE,
