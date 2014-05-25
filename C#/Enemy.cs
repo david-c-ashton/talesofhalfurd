@@ -15,6 +15,15 @@ public struct mUnit
 	public mCLASS eClass;
 }
 
+public enum aTYPE
+{
+	SINGLE,
+	RANGE,
+	AREA_OF_EFFECT,
+	SPLASH,
+	SUPPORT
+}
+
 public struct pStat
 {
 	public int intelligence;
