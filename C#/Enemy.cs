@@ -57,18 +57,19 @@ public enum mTYPE
 
 public enum mDOMAIN
 {
-	FIRE,		// 2x to AIR 						|| 50% from AIR
-	WATER,		// 2x to FIRE 						|| 50% from EARTH
-	EARTH,		// 2x to SOUL 						|| 50% from FIRE
-	AIR,		// 2x to EARTH						|| 50% from WATER
-	DARKNESS,	// 2x to LIGHT 						|| 50% from VAMPIRIC
-	LIGHT,		// 2x to DARKNESS, VAMPIRIC 		|| 50% from SOUL, BODY, MIND
-	MIND,		// 2x to BODY 						|| 50% from SOUL
-	SOUL,		// 2x to VAMPIRIC 					|| 50% from BODY
-	BODY,		// 2x to MIND 						|| 50% from DARKNESS
-	VAMPIRIC,	// 2x to LIGHT, MIND, SOUL, BODY 	|| 50% from ELEMENT
-	PHYSICAL,	// 2x to NONE						|| 50% from ALL			
-	NONE		// 2x to NULL						|| 200% from PHYSICAL 				* 25% ELEMENTAL resist
+	/* ALL, */  // NULL to SELF                     || 0% from SELF
+	FIRE,       // 2x to AIR                        || 50% from AIR
+	WATER,      // 2x to FIRE                       || 50% from EARTH
+	EARTH,      // 2x to SOUL                       || 50% from FIRE
+	AIR,        // 2x to EARTH                      || 50% from WATER
+	DARKNESS,   // 2x to LIGHT                      || 50% from VAMPIRIC
+	LIGHT,      // 2x to DARKNESS, VAMPIRIC         || 50% from SOUL, BODY, MIND
+	MIND,       // 2x to BODY                       || 50% from SOUL
+	SOUL,       // 2x to VAMPIRIC                   || 50% from BODY
+	BODY,       // 2x to MIND                       || 50% from DARKNESS
+	VAMPIRIC,   // 2x to LIGHT, MIND, SOUL, BODY    || 50% from ELEMENT
+	PHYSICAL,   // 2x to NONE                       || 50% from ALL			
+	NONE        // 2x to NULL                       || 200% from PHYSICAL                125% ELEMENTAL resist
 }
 
 public class mCLASS
