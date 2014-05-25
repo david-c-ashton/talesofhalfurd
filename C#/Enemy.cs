@@ -13,6 +13,7 @@ public struct mUnit
 	public pStat stats;
 	public mDOMAIN domain;
 	public mCLASS eClass;
+	public mSEX gender;
 }
 
 public enum mSEX
@@ -128,5 +129,95 @@ public class Enemy
 		this.pMob.health = hp;
 		this.pMob.speed = spd;
 		this.pMob.items = equipped;
+	}
+
+	public void setEnemyId(int id)
+	{
+		this.pMob.enemyId = id;
+	}
+
+	public int getEnemyId()
+	{
+		return this.pMob.enemyId;
+	}
+
+	public void setEnemyHealth(int h)
+	{
+		this.pMob.health = h;
+	}
+
+	public int getEnemyHealth()
+	{
+		return this.pMob.health;
+	}
+
+	public void setEnemySpeed(int s)
+	{
+		this.pMob.speed = s;
+	}
+
+	public int getEnemySpeed()
+	{
+		return this.pMob.speed;
+	}
+
+	public void setEnemyType(mTYPE t)
+	{
+		this.pMob.type = t;
+	}
+
+	public mTYPE getEnemyType()
+	{
+		return this.pMob.type;
+	}
+
+	public void setEnemyEquipment(Equipment e)
+	{
+		this.pMob.items = e;
+	}
+
+	public Equipment getEnemyEquipment()
+	{
+		return this.pMob.items;
+	}
+
+	public void setEnemyStats(pStat s)
+	{
+		this.pMob.stats = s;
+	}
+
+	public pStat getEnemyStats()
+	{
+		return this.pMob.stats;
+	}
+
+	public void setEnemyDomain(mDOMAIN dom)
+	{
+		this.pMob.domain = dom;
+	}
+
+	public mDOMAIN getEnemyDomain()
+	{
+		return this.pMob.domain;
+	}
+
+	public void setEnemyClass(mCLASS c)
+	{
+		this.pMob.eClass = c;
+	}
+
+	public mCLASS getEnemyClass()
+	{
+		return this.pMob.eClass;
+	}
+
+	public void setEnemyGender(mSEX g)
+	{
+		this.pMob.gender = g;
+	}
+
+	public mSEX getEnemyGender()
+	{
+		return this.pMob.gender;
 	}
 }
