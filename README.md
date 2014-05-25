@@ -25,3 +25,7 @@ a young traveller, who discovers his birthright and reclaims the land from an an
 #### Mathematic Algorithm Development
 * David Ashton
 * Chuck Xander
+
+#### Cinematic Detailing and Overview
+* Kody Clifford
+* Chuck Xander
