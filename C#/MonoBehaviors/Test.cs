@@ -2,17 +2,26 @@
 using System.Collections;
 
 public class Test : MonoBehaviour {
-	public Item mItem = new Item();
-	public GameObject fakeItem;
+	public Spell spell1 = new Spell();
+	public Spell spell2 = new Spell();
 
 	// Use this for initialization
 	void Start () {
-		mItem.setItemDurability (100.0f);
-		mItem.setItemID (1);
-		mItem.setItemName ("Wooden Sword");
-		mItem.setItemObject (this.fakeItem);
-		mItem.setItemPower (1);
+		this.spell1.setSpellPower (7);
+		this.spell1.setSpellMana (2);
+		this.spell1.setSpellDuration (0);
+		this.spell1.setSpellName ("Fire Bolt");
+		this.spell1.setSpellDomain (mDOMAIN.FIRE);
+		this.spell1.setSpellType (aTYPE.SINGLE);
 
-		mItem.debug ();
+		this.spell2.setSpellPower (3);
+		this.spell2.setSpellMana (1);
+		this.spell2.setSpellDuration (2.4f);
+		this.spell2.setSpellName ("Light Cure");
+		this.spell2.setSpellDomain (mDOMAIN.BODY);
+		this.spell2.setSpellType (aTYPE.SUPPORT);
+
+		this.spell1.debug ();
+		this.spell2.debug ();
 	}
 }
