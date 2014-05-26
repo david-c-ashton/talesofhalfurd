@@ -10,6 +10,11 @@ public struct pItem
 	public GameObject obj;
 }
 
+public class Inventory
+{
+	public pItem[] items = new pItem[48];
+}
+
 public struct Equipment
 {
 	public pItem helmet;
