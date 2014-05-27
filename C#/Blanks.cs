@@ -13,7 +13,7 @@ public static class CSV
 	public static Hashtable loadItems()
 	{
 		Hashtable i = new Hashtable ();
-		List<string> lines = File.ReadAllLines ("/files/items.dat").ToList();
+		List<string> lines = File.ReadAllLines ("files/items.dat").ToList();
 
 		foreach (string item in lines)
 		{
@@ -26,13 +26,16 @@ public static class CSV
 			nItem.count = int.Parse(data[2]);
 			nItem.itemName = data[3].ToString();
 			nItem.durability = float.Parse(data[4]);
-			string objKey = "/items/obj/" + nItem.itemName + ".obj";
-			nItem.obj = (GameObject)Resources.Load (objKey, typeof(GameObject));
-
+			//string objKey = "/items/obj/" + nItem.itemName + ".obj";
+			//nItem.obj = (GameObject)Resources.Load (objKey, typeof(GameObject));
 			i.Add (nItem.itemName, nItem);
 		}
-
 		return i;
+	}
+
+	public static pItem getItemByName(string itemName)
+	{
+		return (pItem)CSV.items[itemName];
 	}
 }
 
@@ -45,10 +48,7 @@ public static class Blanks
 		switch (pClass) 
 		{
 		case 0:
-			pItem wSword = new pItem();
-			wSword.itemID = 1;
-			wSword.itemName = "Wooden Sword";
-			equipment.weapon = wSword;
+			equipment.weapon = CSV.getItemByName("Wooden Sword");
 			break; 
 		default:
 			break;
