@@ -28,18 +28,9 @@ public class Player
 		 */
 		this.player.inventory = items;
 		this.player.gender = mSEX.MALE;
+		int[] stats = { 10, 12, 12, 10, 10, 10, 10 };
 
-		pStat s = new pStat ();
-
-		s.agility = 10;
-		s.charisma = 10;
-		s.constitution = 12;
-		s.intelligence = 10;
-		s.speed = 10;
-		s.strength = 12;
-		s.wisdom = 10;
-
-		this.player.stats = s;
+		this.player.stats = Blanks.createStats(stats);
 
 		mCLASS c = new mCLASS ();
 		c.Class = WARRIOR.WARRIOR;
