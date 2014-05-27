@@ -1,6 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public static class CSV
+{
+	public static Hashtable items;
+	public static Hashtable enemies;
+	public static Hashtable spells;
+}
+
 public static class Blanks
 {
 	public static Equipment defaultHumanEQ(int pClass, mSEX gender)
