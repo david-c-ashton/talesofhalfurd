@@ -158,10 +158,13 @@ public class Item
 	// #### DEBUG SYSTEM #### //
 	public void debug()
 	{
-		Debug.Log (item.durability.ToString ());
-		Debug.Log (item.itemID.ToString ());
-		Debug.Log (item.itemName);
-		Debug.Log (item.obj.tag.ToString ());
-		Debug.Log (item.power.ToString ());
+		Debug.Log (this.item.durability.ToString ());
+		Debug.Log (this.item.itemID.ToString ());
+		Debug.Log (this.item.count.ToString ());
+		Debug.Log (this.item.itemName);
+		if (this.item.obj != default(GameObject)) {
+			Debug.Log (this.item.obj.tag.ToString ());
+		}
+		Debug.Log (this.item.power.ToString ());
 	}
 }
