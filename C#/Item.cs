@@ -5,6 +5,7 @@ public struct pItem
 {
 	public int itemID;
 	public int power;
+	public int count;
 	public string itemName;
 	public float durability;
 	public GameObject obj;
@@ -77,6 +78,21 @@ public class Item
 	public int getItemPower()
 	{
 		return this.item.power;
+	}
+
+	/* ######### ITEM COUNT ######### */
+
+	/**
+	 ** @PARAM c : int #count
+	 **/
+	public void setItemCount(int c)
+	{
+		this.item.count = c;
+	}
+
+	public int getItemCount()
+	{
+		return this.item.count;
 	}
 
 	/* ######### ITEM NAME ######### */
