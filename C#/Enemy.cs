@@ -118,19 +118,21 @@ public class Enemy
 {
 	public mUnit pMob;
 
-	public Enemy(int id, int hp, int spd)
+	public Enemy(int id)
 	{
 		this.pMob.enemyId = id;
-		this.pMob.health = hp;
-		this.pMob.speed = spd;
 	}
 
-	public Enemy(int id, int hp, int spd, Equipment equipped)
+	public Enemy(int id, int hp, int spd, Equipment equipped, pStat stat, mDOMAIN dom, mCLASS c, mSEX g)
 	{
 		this.pMob.enemyId = id;
 		this.pMob.health = hp;
 		this.pMob.speed = spd;
 		this.pMob.items = equipped;
+		this.pMob.stats = stat;
+		this.pMob.domain = dom;
+		this.pMob.eClass = c;
+		this.pMob.gender = g;
 	}
 
 	public void setEnemyId(int id)
