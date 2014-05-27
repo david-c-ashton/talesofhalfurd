@@ -118,12 +118,7 @@ public class Enemy
 {
 	public mUnit pMob;
 
-	public Enemy(int id)
-	{
-		this.pMob.enemyId = id;
-	}
-
-	public Enemy(int id, int hp, int spd, Equipment equipped, pStat stat, mDOMAIN dom, mCLASS c, mSEX g)
+	public Enemy(int id, int hp = 0, int spd = 0, Equipment equipped = new Equipment(), pStat stat = new pStat(), mDOMAIN dom = mDOMAIN.NONE, mCLASS c = null, mSEX g = mSEX.MALE)
 	{
 		this.pMob.enemyId = id;
 		this.pMob.health = hp;
