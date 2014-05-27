@@ -118,7 +118,7 @@ public class Enemy
 {
 	public mUnit pMob;
 
-	public Enemy(int id, int hp = 0, int spd = 0, Equipment equipped = new Equipment(), pStat stat = new pStat(), mDOMAIN dom = mDOMAIN.NONE, mCLASS c = null, mSEX g = mSEX.MALE)
+	public Enemy(int id, int hp = 0, int spd = 0, Equipment equipped = default(Equipment), pStat stat = default(pStat), mDOMAIN dom = mDOMAIN.NONE, mCLASS c = default(mCLASS), mSEX g = mSEX.MALE)
 	{
 		this.pMob.enemyId = id;
 		this.pMob.health = hp;
