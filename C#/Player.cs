@@ -22,11 +22,7 @@ public class Player
 	{
 		this.player.name = n;
 		this.player.id = 0;
-		Equipment items = new Equipment ();
-		/*
-		 * @TODO: Set default items
-		 */
-		this.player.inventory = items;
+		this.player.inventory = Blanks.defaultHumanEQ (0, mSEX.MALE);
 		this.player.gender = mSEX.MALE;
 		int[] stats = { 10, 12, 12, 10, 10, 10, 10 };
 
