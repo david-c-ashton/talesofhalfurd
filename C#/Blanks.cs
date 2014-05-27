@@ -1,11 +1,39 @@
 ﻿using UnityEngine;
+using System.IO;
+using System.Linq;
 using System.Collections;
+using System.Collections.Generic;
 
 public static class CSV
 {
 	public static Hashtable items;
 	public static Hashtable enemies;
 	public static Hashtable spells;
+
+	public static Hashtable loadItems()
+	{
+		Hashtable i = new Hashtable ();
+		List<string> lines = File.ReadAllLines ("/files/items.dat").ToList();
+
+		foreach (string item in lines)
+		{
+			pItem nItem = new pItem();
+			char[] splitter = {','};
+			string[] data = item.Split(splitter);
+
+			nItem.itemID = int.Parse(data[0]);
+			nItem.power = int.Parse(data[1]);
+			nItem.count = int.Parse(data[2]);
+			nItem.itemName = data[3].ToString();
+			nItem.durability = float.Parse(data[4]);
+			string objKey = "/items/obj/" + nItem.itemName + ".obj";
+			nItem.obj = (GameObject)Resources.Load (objKey, typeof(GameObject));
+
+			i.Add (nItem.itemName, nItem);
+		}
+
+		return i;
+	}
 }
 
 public static class Blanks
