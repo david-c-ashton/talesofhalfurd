@@ -49,6 +49,13 @@ public static class Blanks
 		{
 		case 0:
 			equipment.weapon = CSV.getItemByName("Wooden Sword");
+			equipment.chestpiece = CSV.getItemByName("Leather Armor");
+			equipment.boots = CSV.getItemByName("Leather Boots");
+			equipment.belt = CSV.getItemByName("Leather Belt");
+			equipment.gauntlets = CSV.getItemByName("Leather Gloves");
+			equipment.helmet = CSV.getItemByName("Leather Cap");
+			equipment.leggings = CSV.getItemByName("Leather Pants");
+			equipment.offhand = CSV.getItemByName("Wooden Shield");
 			break; 
 		default:
 			break;
