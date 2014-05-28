@@ -15,9 +15,4 @@ public static class FS
 		lines.RemoveAt (0);
 		return lines;
 	}
-
-	public static pItem FindItemBy(string[] item, string type)
-	{
-		return new pItem ();
-	}
 }
