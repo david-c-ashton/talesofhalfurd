@@ -34,18 +34,6 @@ public struct Equipment
 	public pItem ammo;
 }
 
-public static class getItemBy
-{
-	public static pItem id(int itemID)
-	{
-		/*
-		 * @TODO
-		 * Write method to read file to get item by ID
-		 */
-		return new pItem();
-	}
-}
-
 public class Item
 {
 	public pItem item;
