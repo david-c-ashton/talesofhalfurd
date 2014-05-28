@@ -13,7 +13,7 @@ public static class CSV
 	public static Hashtable loadItems()
 	{
 		Hashtable i = new Hashtable ();
-		List<string> lines = File.ReadAllLines ("files/items.dat").ToList();
+		List<string> lines = FS.readFile("files/items.csv");
 
 		foreach (string item in lines)
 		{
