@@ -9,6 +9,7 @@ public struct mSpell
 	public string name;
 	public mDOMAIN domain;
 	public aTYPE type;
+	public AnimationClip anim;
 }
 
 public class Spell
